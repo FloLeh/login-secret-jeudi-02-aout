@@ -3,6 +3,9 @@
     <h1 class="h3 mb-3 font-weight-normal">Créer un profil</h1>
   </div>
   <%= form_for @post,url: {action: "create"}, html: {class: "form-signin w-25"} do |f| %>
+    Name :
+    <%= f.text_field :name, class: "form-control", placeholder: "MyName" %>
+    <br /> <br />
     Email :
     <%= f.email_field :email, class: "form-control", placeholder: "something@heyah.com" %>
     <br /> <br />
