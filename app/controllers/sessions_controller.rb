@@ -6,8 +6,8 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
-      log_in user
-      redirect_to user
+      log_in user 
+      redirect_to user, success: "Vous êtes connecté"
     else
       redirect_to login_path, danger: "Mauvais email ou password"
     end

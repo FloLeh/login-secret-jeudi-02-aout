@@ -4,4 +4,7 @@ class StaticPagesController < ApplicationController
 
   def answer
   end
+
+  def list_users
+  end
 end
