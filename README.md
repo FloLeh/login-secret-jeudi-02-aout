@@ -1,24 +1,29 @@
-# README
+# Voici la vérité, la réponse à toutes vos questions : [Révélation](https://thp-nantes-top-secret.herokuapp.com/)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Pour tester en local :
 
-Things you may want to cover:
+### Un clone du repository
+```
+git clone https://github.com/FloLeh/login-secret-jeudi-02-aout
+```
+### Un bundle des gem sans celles en production
+```
+bundle install --without production
+```
+### Un migrate pour la table users
+```
+rails db:migrate
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Si le coeur vous en dit, allez dans la console
+```
+rails console
+```
+### Sinon lancer le serveur en local
+```
+rails server
+```
+### Plus qu'à vérifier le résultat
+```
+http://localhost:3000/
+```
